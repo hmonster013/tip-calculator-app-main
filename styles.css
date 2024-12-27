@@ -228,6 +228,10 @@ p.container__output--price {
     grid-area: 1 / 1;
   }
 
+  .container__input span {
+    right: 32px;
+  }
+
   .container__input--button-group {
     display: flex;
     flex-wrap: wrap;
