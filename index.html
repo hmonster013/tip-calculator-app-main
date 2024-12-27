@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="./images/logo.svg" alt="logo" id="logo">
+  <div class="container">
+    <div class="container__input">
+      <p>Bill</p>
+      <div class="container__input--group">
+        <img src="./images/icon-dollar.svg" alt="icon-dollar">
+        <input type="number" placeholder="0" id="billInput">
+      </div>
+      <p>Select Tip %</p>
+      <div class="container__input--button-group">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="number" placeholder="Custom" id="customTip">
+      </div>
+      <p>Number of People<span>Can't be zero</span></p>
+      <div class="container__input--group">
+        <img src="./images/icon-person.svg" alt="icon-person">
+        <input type="number" placeholder="0" id="peopleInput">
+      </div>
+    </div>
+    <div class="container__output">
+      <div class="container__output--tip">
+        <p>Tip Amount<span>/ person</span></p>
+        <p class="container__output--price" id="tipAmount">$0.00</p>
+      </div>
+      <div class="container__output--total">
+        <p>Total<span>/ person</span></p>
+        <p class="container__output--price" id="total">$0.00</p>
+      </div>
+      <button id="resetButton">RESET</button>
+    </div>
+  </div>
+</body>
+</html>
